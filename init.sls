@@ -2,8 +2,6 @@ knot:
   pkg.installed:
     - pkgs:
       - knot
-    - require:
-      - sls: pacman
   file.managed:
     - name: /etc/knot/knot.conf
     - source: salt://knot/files/knot.conf
